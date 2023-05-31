@@ -1,4 +1,4 @@
-# studyMaterial
+# Git (branch, tags and commits, stash command and hooks)
 
 What is git?
 Git is a free and open source version control system. Version Control is the management of changes to documents, computer programs, large web sites, and other collections of information. 
