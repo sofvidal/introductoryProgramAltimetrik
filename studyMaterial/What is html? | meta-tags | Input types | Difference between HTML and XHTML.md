@@ -49,3 +49,21 @@ HTML stands for Hypertext Markup Language, whereas XHTML stands for Extensible H
 For example: HTML is SGML based; whereas XHTML is an XML-based language. HTML is not a case-sensitive language; XHTML is a case-sensitive language. HTML empty elements do not require a closing tag at the end, not even a "/" symbol to signify the end of the tag; XHTML empty elements must always be closed; that is, there must be a "/" symbol at the end of the empty element.
 
 Sources: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input, https://developer.mozilla.org/en-US/docs/Web/HTML, https://developers.google.com/search/docs/crawling-indexing/special-tags, https://www.scaler.com/topics/difference-between-html-and-xhtml/ 
+
+Data-attributes in HTML: 
+HTML is designed with extensibility in mind for data that should be associated with a particular element but need not have any defined meaning. data-* attributes allow us to store extra information on standard, semantic HTML elements without other hacks such as non-standard attributes, or extra properties on DOM.
+
+The syntax is simple. Any attribute on any element whose attribute name starts with data- is a data attribute. Say you have an article and you want to store some extra information that doesn't have any visual representation. Just use data attributes for that:
+
+<article
+  id="electric-cars"
+  data-columns="3"
+  data-index-number="12314"
+  data-parent="cars">
+  ...
+</article>
+
+
+Source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+  
+ 
