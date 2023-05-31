@@ -66,4 +66,35 @@ The syntax is simple. Any attribute on any element whose attribute name starts w
 
 Source: https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
   
- 
+Input types | Accessibility | Semantic HTML 
+
+Semantics refers to the meaning of a piece of code — for example "what effect does running that line of JavaScript have?", or "what purpose or role does that HTML element have" (rather than "what does it look like?".)
+In HTML, for example, the h1 element is a semantic element, which gives the text it wraps around the role (or meaning) of "a top level heading on your page."
+
+<h1>This is a top level heading</h1>
+
+
+By default, most browser's user agent stylesheet will style an h1 with a large font size to make it look like a heading (although you could style it to look like anything you wanted).
+
+On the other hand, you could make any element look like a top level heading. Consider the following:
+
+<span style="font-size: 32px; margin: 21px 0;">Not a top-level heading!</span>
+
+
+This will render it to look like a top level heading, but it has no semantic value, so it will not get any extra benefits as described above. It is therefore a good idea to use the right HTML element for the right job.
+
+HTML should be coded to represent the data that will be populated and not based on its default presentation styling. Presentation (how it should look), is the sole responsibility of CSS.
+
+Some of the benefits from writing semantic markup are as follows:
+-Search engines will consider its contents as important keywords to influence the page's search rankings (see SEO)
+-Screen readers can use it as a signpost to help visually impaired users navigate a page
+-Finding blocks of meaningful code is significantly easier than searching through endless divs with or without semantic or namespaced classes
+-Suggests to the developer the type of data that will be populated
+-Semantic naming mirrors proper custom element/component naming
+
+A few semantic elements: <article>, <aside>, <details>, <figcaption>, <figure>, <form>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>
+
+Source: https://developer.mozilla.org/en-US/docs/Glossary/Semantics 
+
+
+
